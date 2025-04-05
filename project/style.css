@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100dvh;
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+}
+
+header {
+  margin: 0 12%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: white;
+  font-size: 1.75rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  transition: 300ms;
+}
+
+header nav a:hover {
+  color: #009eba;
+}
+
+.login-buttons button {
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 12px 16px;
+  transition: 400ms;
+}
+
+.btn-sign-in{
+  border: none;
+}
+
+.btn-sign-in:hover {
+  color: #009eba;
+}
+
+.btn-sign-up {
+  border: 2px solid #009eba;
+  border-radius: 12px;
+
+}
+
+.btn-sign-up:hover {
+  background-color: #009eba;
+}
+
+main {
+  margin: 0 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88%;
+}
+
+.welcome h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.welcome p {
+  color: white;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+.welcome .buttons-welcome button {
+  width: 140px;
+  color: white;
+  background-color: transparent;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.welcome .buttons-welcome .btn-join-now {
+  background-color: #009eba;
+}
+
+.welcome .buttons-welcome .btn-learn-more {
+  border: 2px solid white;
+  margin-left: 20px;
+  transition: 400ms;
+}
+
+.welcome .buttons-welcome .btn-learn-more:hover {
+  background-color: #009eba;
+}
+
+@media screen and (max-width: 1150px) {
+  .img-welcome {
+    display: none;
+  }
+
+  .navigation-links {
+    display: none;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .welcome h2 {
+    font-size: 5vw;
+  }
+
+  header, main {
+    margin: 0 5%;
+  }
+
+  .welcome h2 {
+    font-size: 24px;
+  }
+
+  .welcome p {
+    font-size: 1px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login-buttons {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+}
