@@ -121,7 +121,7 @@ main {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 520px) {
   .welcome h2 {
     font-size: 5vw;
   }
@@ -135,12 +135,11 @@ main {
   }
 
   .welcome p {
-    font-size: 1px;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .login-buttons {
     display: none;
   }
